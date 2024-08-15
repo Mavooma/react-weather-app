@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Weather.css";
 
-export default function Weather() {
+export default function Weather(prop) {
     const [weatherData, setWeatherData] = useState({ ready: false });
     const [city, setCity] = useState("Johannesburg");
 
